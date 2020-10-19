@@ -125,6 +125,23 @@ $data = '[
 
 $data = json_decode($data, true);
 
+$tipi_pasta = [
+  "Le lunghe" => [],
+  "Le corte" => [],
+  "Le cortissime" => []
+];
+
+foreach ($data as $prodotto) {
+  if ($prodotto["tipo"] == "lunga") {
+    $tipi_pasta["Le lunghe"][] = $prodotto;
+
+  } elseif ($prodotto["tipo"] == "corta") {
+      $tipi_pasta["Le corte"][] = $prodotto;
+
+  } elseif ($prodotto["tipo"] == "cortissima") {
+      $tipi_pasta["Le cortissime"][] = $prodotto;
+  }
+}
 
 
 @endphp
@@ -138,6 +155,15 @@ $data = json_decode($data, true);
     <title>Home</title>
   </head>
   <body>
-    <h1>Home</h1>
+    @foreach ($tipi_pasta as $key => $tipo_pasta)
+      <h2>{{ $key }}</h2>
+      <ul>
+        @foreach ($tipo_pasta as $prodotto)
+          <li>
+            <img src="{{ $prodotto["src"] }}" alt="Immagine pasta">
+          </li>
+        @endforeach
+      </ul>
+    @endforeach
   </body>
 </html>
