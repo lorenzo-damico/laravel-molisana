@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #002D73;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.pasta-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pasta-menu li {
+  width: calc((100% - 30px) / 3);
+  margin: 5px;
+}
+.pasta-menu li img {
+  width: 100%;
+}
