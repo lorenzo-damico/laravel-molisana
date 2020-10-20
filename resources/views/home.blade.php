@@ -37,9 +37,12 @@ foreach ($data as $key => $prodotto) {
           <h2>{{ $key }}</h2>
           <ul class="pasta-menu">
             @foreach ($tipo_pasta as $prodotto)
-              <li>
-                <img src="{{ $prodotto["src"] }}" alt="Immagine pasta">
-                <h3><a href="prodotti/show/{{ $prodotto["id"] }}">{{ $prodotto["titolo"] }}</a></h3>
+              <li class="box-prodotto">
+                <img class="immagine-prodotto" src="{{ $prodotto["src"] }}" alt="Immagine pasta">
+                <div class="layover">
+                  <h3><a href="prodotti/show/{{ $prodotto["id"] }}">{{ $prodotto["titolo"] }}</a></h3>
+                  <a href="prodotti/show/{{ $prodotto["id"] }}"><img src="{{ asset("images/icon.svg")}}" alt="Icona posate"></a>
+                </div>
               </li>
             @endforeach
           </ul>

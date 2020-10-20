@@ -1,10 +1,13 @@
 // Color
 $color-menu-text: #000;
 $color-pasta-type: #002D73;
-$color-footer-text: #848D9B;
+$color-footer-title: #848D9B;
+$color-footer-text: #A4AAB5;
+$color-layover-title: #fff;
 
 // Background-color
 $bg-current-page: #B3E5FC;
+$bg-product-overlay: rgba(74, 102, 128, 0.8);
 
 // Font-family
 $font-main: 'Open Sans', sans-serif;
@@ -12,7 +15,11 @@ $font-main: 'Open Sans', sans-serif;
 // Font-weight
 $weight-pasta-type: 600;
 $weight-menu-text: 700;
+$weight-layover-title: 400;
 
 // Font-size
 $size-pasta-type: 38px;
 $size-menu-text: 28px;
+$size-footer-text: 17px;
+$size-footer-title: 30px;
+$size-layover-title: 25px;
