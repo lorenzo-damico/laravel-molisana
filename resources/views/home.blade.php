@@ -145,35 +145,28 @@ foreach ($data as $prodotto) {
 
 @endphp
 
+@extends('layouts.main')
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ asset("css/app.css") }}">
-  </head>
-  <body>
+@section('title')
+  Home
+@endsection
+
+@section('main-content')
+  <div class="pasta-section">
     <div class="container">
-      <header>
-        <img src="{{ asset("images/logo-molisana.png") }}" alt="Logo molisana">
-      </header>
-      <main>
-        @foreach ($tipi_pasta as $key => $tipo_pasta)
-          @if ($tipo_pasta)
-            <h2>{{ $key }}</h2>
-            <ul class="pasta-menu">
-              @foreach ($tipo_pasta as $prodotto)
-                <li>
-                  <img src="{{ $prodotto["src"] }}" alt="Immagine pasta">
-                </li>
-              @endforeach
-            </ul>
-          @endif
-        @endforeach
-      </main>
-
+      @foreach ($tipi_pasta as $key => $tipo_pasta)
+        @if ($tipo_pasta)
+          <h2>{{ $key }}</h2>
+          <ul class="pasta-menu">
+            @foreach ($tipo_pasta as $prodotto)
+              <li>
+                <img src="{{ $prodotto["src"] }}" alt="Immagine pasta">
+                <h3>{{ $prodotto["titolo"] }}</h3>
+              </li>
+            @endforeach
+          </ul>
+        @endif
+      @endforeach
     </div>
-  </body>
-</html>
+  </div>
+@endsection

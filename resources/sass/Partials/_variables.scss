@@ -1,16 +1,18 @@
 // Color
-$header-menu-text: #000;
-$header-menu-selected: #B3E5FC;
-$main-title: #002D73;
-$footer-text: #848D9B;
+$color-menu-text: #000;
+$color-pasta-type: #002D73;
+$color-footer-text: #848D9B;
+
+// Background-color
+$bg-current-page: #B3E5FC;
 
 // Font-family
-$main-font: 'Open Sans', sans-serif;
+$font-main: 'Open Sans', sans-serif;
 
 // Font-weight
-$regular: 400;
-$semibold: 600;
-$bold: 700;
+$weight-pasta-type: 600;
+$weight-menu-text: 700;
 
 // Font-size
-$title-2: 38px;
+$size-pasta-type: 38px;
+$size-menu-text: 28px;

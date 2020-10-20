@@ -12,12 +12,12 @@
 
 // TYPO
 body {
-  font-family: $main-font;
+  font-family: $font-main;
 }
 
 h2 {
   text-transform: uppercase;
-  color: $main-title;
-  font-size: $title-2;
-  font-weight: $semibold;
+  color: $color-pasta-type;
+  font-size: $size-pasta-type;
+  font-weight: $weight-pasta-type;
 }

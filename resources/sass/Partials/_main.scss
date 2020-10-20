@@ -1,14 +1,19 @@
-.pasta-menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.pasta-section {
+  padding: 60px 0 40px;
+  background-image: url("../images/fondo-pag-speciali.jpg");
+  background-position: center bottom;
 
-  li {
-    width: calc((100% - 30px) / 3);
-    margin: 5px;
+  .pasta-menu {
+    @include menu-inline;
+    flex-wrap: wrap;
 
-    img {
-      width: 100%;
+    li {
+      width: calc((100% - 30px) / 3);
+      margin: 5px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

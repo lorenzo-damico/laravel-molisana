@@ -20,15 +20,44 @@ h2 {
   font-weight: 600;
 }
 
-.pasta-menu {
-  list-style: none;
+header .logo {
+  padding: 50px 0;
+  text-align: center;
+}
+header .header-navbar .main-menu {
   display: flex;
+  list-style: none;
+  justify-content: center;
+}
+header .header-navbar .main-menu li {
+  margin: 0 10px;
+}
+header .header-navbar .main-menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 25px 10px;
+  display: inline-block;
+}
+header .header-navbar .main-menu .active {
+  background-color: #B3E5FC;
+}
+
+.pasta-section {
+  padding: 60px 0 40px;
+  background-image: url("../images/fondo-pag-speciali.jpg");
+  background-position: center bottom;
+}
+.pasta-section .pasta-menu {
+  display: flex;
+  list-style: none;
   flex-wrap: wrap;
 }
-.pasta-menu li {
+.pasta-section .pasta-menu li {
   width: calc((100% - 30px) / 3);
   margin: 5px;
 }
-.pasta-menu li img {
+.pasta-section .pasta-menu li img {
   width: 100%;
 }
