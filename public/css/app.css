@@ -61,3 +61,7 @@ header .header-navbar .main-menu .active {
 .pasta-section .pasta-menu li img {
   width: 100%;
 }
+.pasta-section .pasta-menu li h3 a {
+  text-decoration: none;
+  color: #000;
+}
