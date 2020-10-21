@@ -23,17 +23,17 @@ foreach ($data as $key => $prodotto) {
 
 @endphp
 
-@extends('layouts.timbro')
+@extends('layouts.main')
 
 @section('title')
   Home
 @endsection
 
-@section('main')
+@section('main-content')
   <div class="pasta-section">
     <div class="container">
       @foreach ($tipi_pasta as $key => $tipo_pasta)
-        @if ($tipo_pasta)
+        @if (!empty($tipo_pasta))
           <h2>{{ $key }}</h2>
           <ul class="pasta-menu">
             @foreach ($tipo_pasta as $prodotto)
