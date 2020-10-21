@@ -1,0 +1,63 @@
+.sezione-dettaglio-prodotto {
+
+  background-color: $bg-dettaglio-prodotto;
+  padding: 40px 0;
+  position: relative;
+
+
+  h1 {
+    color: $color-pasta-type;
+    font-size: $size-pasta-type;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .descrizione-prodotto {
+    color: $color-pasta-type;
+    font-size: $size-menu-text;
+    font-weight: 600;
+  }
+
+  .next-product {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    background-color: #DBECF2;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+
+    a {
+      color: $color-layover-title;
+      font-size: 70px;
+      text-decoration: none;
+
+      i {
+        display: block;
+      }
+    }
+  }
+
+  .prev-product {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    background-color: #DBECF2;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0;
+
+    a {
+      color: $color-layover-title;
+      font-size: 70px;
+      text-decoration: none;
+
+      i {
+        display: block;
+      }
+    }
+  }
+}

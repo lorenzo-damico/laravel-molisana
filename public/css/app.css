@@ -97,6 +97,59 @@ header .header-navbar .main-menu .active {
   display: block;
 }
 
+.sezione-dettaglio-prodotto {
+  background-color: #B7DAE5;
+  padding: 40px 0;
+  position: relative;
+}
+.sezione-dettaglio-prodotto h1 {
+  color: #002D73;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+.sezione-dettaglio-prodotto img {
+  width: 100%;
+  display: block;
+}
+.sezione-dettaglio-prodotto .descrizione-prodotto {
+  color: #002D73;
+  font-size: 28px;
+  font-weight: 600;
+}
+.sezione-dettaglio-prodotto .next-product {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  background-color: #DBECF2;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+.sezione-dettaglio-prodotto .next-product a {
+  color: #fff;
+  font-size: 70px;
+  text-decoration: none;
+}
+.sezione-dettaglio-prodotto .next-product a i {
+  display: block;
+}
+.sezione-dettaglio-prodotto .prev-product {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  background-color: #DBECF2;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0;
+}
+.sezione-dettaglio-prodotto .prev-product a {
+  color: #fff;
+  font-size: 70px;
+  text-decoration: none;
+}
+.sezione-dettaglio-prodotto .prev-product a i {
+  display: block;
+}
+
 footer .footer {
   color: #A4AAB5;
   font-weight: 600;
