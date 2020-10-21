@@ -117,37 +117,27 @@ header .header-navbar .main-menu .active {
   font-size: 28px;
   font-weight: 600;
 }
-.sezione-dettaglio-prodotto .next-product {
+.sezione-dettaglio-prodotto .change-product {
   position: absolute;
   top: 45%;
-  right: 0;
   background-color: #DBECF2;
   padding: 10px;
-  border-radius: 5px 0 0 5px;
 }
-.sezione-dettaglio-prodotto .next-product a {
+.sezione-dettaglio-prodotto .change-product a {
   color: #fff;
   font-size: 70px;
   text-decoration: none;
 }
-.sezione-dettaglio-prodotto .next-product a i {
+.sezione-dettaglio-prodotto .change-product a i {
   display: block;
 }
-.sezione-dettaglio-prodotto .prev-product {
-  position: absolute;
-  top: 45%;
+.sezione-dettaglio-prodotto .change-product.prev {
   left: 0;
-  background-color: #DBECF2;
-  padding: 10px;
-  border-radius: 0px 5px 5px 0;
+  border-radius: 0 5px 5px 0;
 }
-.sezione-dettaglio-prodotto .prev-product a {
-  color: #fff;
-  font-size: 70px;
-  text-decoration: none;
-}
-.sezione-dettaglio-prodotto .prev-product a i {
-  display: block;
+.sezione-dettaglio-prodotto .change-product.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
 }
 
 footer .footer {

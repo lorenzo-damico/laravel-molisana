@@ -20,14 +20,14 @@
     </div>
 
     @if ($id > 0)
-      <div class="prev-product">
+      <div class="change-product prev">
         <a href="{{ route('dettaglio-prodotto', $prev_id) }}"><i class="fas fa-angle-left"></i></a>
       </div>
 
     @endif
 
     @if ($id < $numero_prodotti - 1)
-      <div class="next-product">
+      <div class="change-product next">
         <a href="{{ route('dettaglio-prodotto', $next_id) }}"><i class="fas fa-angle-right"></i></a>
       </div>
     @endif

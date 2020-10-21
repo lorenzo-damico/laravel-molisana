@@ -23,13 +23,11 @@
     font-weight: 600;
   }
 
-  .next-product {
+  .change-product {
     position: absolute;
     top: 45%;
-    right: 0;
-    background-color: #DBECF2;
+    background-color: $bg-change-product;
     padding: 10px;
-    border-radius: 5px 0 0 5px;
 
     a {
       color: $color-layover-title;
@@ -40,24 +38,16 @@
         display: block;
       }
     }
-  }
 
-  .prev-product {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    background-color: #DBECF2;
-    padding: 10px;
-    border-radius: 0px 5px 5px 0;
+    &.prev {
+      left: 0;
+      border-radius: 0 5px 5px 0;
+    }
 
-    a {
-      color: $color-layover-title;
-      font-size: 70px;
-      text-decoration: none;
-
-      i {
-        display: block;
-      }
+    &.next {
+      right: 0;
+      border-radius: 5px 0 0 5px;
     }
   }
+
 }
