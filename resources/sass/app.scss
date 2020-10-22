@@ -1,4 +1,11 @@
+// Font
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+// Partials
 @import "Partials/_variables.scss";
 @import "Partials/_mixins.scss";
 @import "Partials/_common.scss";
